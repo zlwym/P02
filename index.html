@@ -1,1 +1,646 @@
 
+<!-- All code referenced from lecture + assignment example codes -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header-layout">
+
+      <div class="header-display">
+        <a class="header-nav-display cart-nav" href="checkout.html">Cart</a>
+
+        <h1>Oak's Archive</h1>
+          <nav>     
+            <a class="header-nav-display" href="index.html">Home</a>   
+            <a class="header-nav-display" href="products.html">Books</a>
+            <a class="header-nav-display" href="products.html">Print</a>
+            <a class="header-nav-display" href="products.html">Stationary</a>
+            <a class="header-nav-display" href="products.html">Sales</a>
+          </nav>
+      
+      </div>
+    </header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" class="body-align">
+
+      <h1>Interactive Elements</h1>
+
+        <section class="element">
+            <h2>In-text link</h2>
+
+            <h4>CSS selector:</h4>
+            <p>.in-text-link</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;a class="in-text-link" href="https://www.papier.com/ca"&gt;View Products&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a href="https://www.papier.com/ca" target="_blank">View Products</a>
+
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+
+            <h2>Navigation Link</h2>
+
+            <h4>CSS selector:</h4>
+            <p>.button-display</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;a href="#" class="button"&gt;Shop&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a class="button-display" href="#">Shop</a>
+
+        </section>
+
+
+        <section class="element">
+            <h2>Submit/Reset Buttons</h2>
+
+            <h4>CSS selector:</h4>
+            <p>.submit-botton</p>
+
+            <h4>Sample code:</h4>
+            <code>input type="submit" value="Submit"</code>
+
+            <!-- Code referenced from: https://www.w3schools.com/html/html_forms.asp -->
+            <h4>Rendered element:</h4>
+            <input class="submit-botton" type="submit" value="Submit">
+
+        </section>
+
+
+        <section class="element">
+            <h2>Text Input Field with Label</h2>
+
+            <h4>CSS selector:</h4>
+            <p>N/A</p>
+
+            <h4>Sample code:</h4>
+            <code>input type="text" placeholder="Bob"</code>
+
+            <h4>Rendered element:</h4>
+
+            <div class="input-field">
+              <label> 
+                First Name 
+                <input class="input-display" type="text" placeholder="Bob">
+                
+                Last Name 
+                <input class="input-display" type="text" placeholder="Simpson">
+              </label>
+            </div>
+        
+        </section>
+
+        <section class="element">
+            <h2>Radio Button with Label</h2>
+
+            <h4>CSS selector:</h4>
+            <p>N/A</p>
+
+            <h4>Sample code:</h4>
+            <code>input type="radio" id="volume1" name="volumes" value="volume 1"</code>
+
+            <!-- Code referenced from: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+            <h4>Rendered element:</h4>
+
+            <div class="radio-button">
+              <div>
+                <input class="radio-input" type="radio" id="volume1" name="volumes" value="volume 1">
+                <label class="radio-label" for="volume1">Volume 1</label> 
+              </div>
+              <div>
+                <input class="radio-input" type="radio" id="volume2" name="volumes" value="volume 2">
+                <label class="radio-label" for="volume2">Volume 2</label>
+              </div>
+            </div>
+        
+        </section>
+      </div>
+
+
+      <section class="element">
+        <h2>Image as a Link</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank"&gt;&lt;img src="img/book.jpg"
+            alt="A Yellow Book"
+            width="400"
+            height="400"/&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element</h4>
+        <figure>
+          <a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank"
+          ><img class="img-element"
+            src="img/book.jpg"
+            alt="A Yellow Book"
+            width="400"
+            height="400"
+        /></a>
+        </figure>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" class="body-align">
+      <h1>Text Elements</h1>
+
+      <section class="element">
+        <h2>Headings</h2>
+
+        <h4>CSS selector</h4>
+        <p>h1, h2, h3, h4 { ... } </p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;Header 1&lt;h1&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1 class="text-display">Header 1</h1>
+        <h2 class="text-display-h2 text-display">Header 2</h2>
+        <h3 class="text-display">Header 3</h3>
+        <h4 class="text-display-h4 text-display">Header 4</h4>
+      </section>
+
+      <section class="element">
+        <h2>Paragraphs</h2>
+
+        <h4>CSS selector</h4>
+        <p>p { ... }</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Header 1&lt;p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p class="text-display-p">Search through our naturalist collection with over 7 million books, ranging from books, zines, catalogues, postcards, prints, and stationary. Whether you're looking for your next non-fiction, coffee table decor, visual inspiration, or gift for a loved one, explore and discover what speaks to you at Oak's Archive!</p>
+
+      </section>
+
+      <section class="element">
+        <h2>Numbered Lists</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&ltol type="1"&gt; &lt;li&gt;Novels&lt;li&gt; ol&gt;</code>
+
+        <!-- Code referenced from:  https://www.w3schools.com/html/html_lists_ordered.asp -->
+        <h4>Rendered element:</h4>
+        <ol type="1">
+          <li>Novels</li>
+          <li>Zines</li>
+          <li>Stationary</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements" class="body-align">
+      <h1>Combined Elements</h1>
+
+      <section class="element">
+        <h2>Main Navigation</h2>
+
+        <h4>CSS selector</h4>
+        <p>nav { ... }</p>
+        
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#combined_elements">Home&lt;/a</code>
+
+      <h4>Rendered element</h4>
+
+      <div class="header-layout">
+        <nav>        
+          <a class="header-nav-display" href="#combined_elements">Home</a>
+          <a class="header-nav-display" href="products.html">Books</a>
+          <a class="header-nav-display" href="products.html">Print</a>
+          <a class="header-nav-display" href="products.html">Stationary</a>
+          <a class="header-nav-display" href="products.html">Sales</a>
+        </nav>
+      </div>
+      </section>
+
+
+      <section class="element">
+        <h2>Product/Service Listing</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank"&gt;&lt;img src="img/book.jpg"
+            alt="A Yellow Book"
+            width="350"
+            height="350"/&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element</h4>
+      
+        <div class="service-listing">
+          <div>
+            <figure>
+              <a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank"
+              ><img class="img-element"
+                src="img/book.jpg"
+                alt="A Yellow Book"
+                width="300"
+                height="300"
+            /></a>
+          </div>
+            <div class="service-listing-info">
+              <h2 class="service-display-h2">01. Henri Michaux's Yellow Archive Book</h2>
+              <h3 class="service-price">$20.00</h3>
+              <p class="service-info">Michaux's archive book is one of six different collector's items from his Memory Catalogue. Remember the moments with family and friends or of the little things in life, then revist those memories as you captured them.</p>
+              <a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+
+      <section class="element">
+        <h2>Payment Form</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="text" placeholder="Ex. Bob Simpson"&gt;</code>
+
+        <h4>Rendered element</h4>
+
+            <div class="order-form">
+              <div>
+                <h1 class="page-header">Checkout</h1>
+
+                <div class="radio-button">
+                  <input class="radio-input" type="radio" id="card" name="payment_methods" value="Card">
+                  <label class="radio-label" for="card">Card</label> 
+
+                  <input class="radio-input" type="radio" id="apple-pay" name="payment_methods" value="Apple Pay">
+                  <label class="radio-label" for="apple-pay">Apple Pay</label>
+                </div>          
+
+                <div class="input-field">
+                  <label class="checkout-label"> 
+                    Name on Card 
+                    <input class="input-display" type="text" placeholder="Ex. Bob Simpson">
+                  </label>
+                  <label class="checkout-label">
+                    Postal Code 
+                    <input class="input-display" type="text" placeholder="ABC 123">
+                </label>
+                </div>
+              </div>
+                <div>
+                  <input class="submit-botton" type="submit" value="Order">
+                </div>
+            </div>
+
+      </section>
+
+
+      <section class="element checkout-basket">
+        <h2>Checkout Cart</h2>
+
+        <h4>CSS selector</h4>
+        <p>.checkout-display</p>
+
+        <h4>Sample code 01:</h4>
+        <code>&lt;a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank"&gt;&lt;img src="img/book.jpg"
+            alt="A Yellow Book"
+            width="150"
+            height="150"/&gt;&lt;/a&gt;</code>
+
+
+        <h4>Sample code 02:</h4>
+        <code>&lt;a href="https://ca.pinterest.com/pin/68748526857/" target="_blank"&gt;&lt;img src="img/book2.jpg"
+            alt="Little Blue Book"
+            width="150"
+            height="150"/&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element</h4>
+
+        <div class="order-form">
+          <h1 class="page-header">Basket</h1>
+          <h2 class="header-subtext">Confirm Your Order</h2>
+          
+          <div class="checkout-display">
+            <figure>
+              <a href="https://ca.pinterest.com/pin/448389706674489919/" target="_blank"
+              ><img class="img-element"
+                src="img/book.jpg"
+                alt="A Yellow Book"
+                width="150"
+                height="150"
+            /></a>
+            </figure>
+
+            <div class="checkout-item-text">
+              <h2 class="checkout-item-name"> Yellow Archive</h2>
+              <p class="checkout-item-name"> Henri Michaux's Yellow Archive Book</p>
+              <h4 class="checkout-price">$20.00</h4>
+            </div>
+          </div>
+
+          <div class="checkout-display">
+            <figure>
+              <a href="https://ca.pinterest.com/pin/68748526857/" target="_blank"
+              ><img class="img-element"
+                src="img/book2.jpg"
+                alt="Little Blue Book"
+                width="150"
+                height="150"
+            /></a>
+            </figure>
+            <div class="checkout-item-text">
+              <h2 class="checkout-item-name"> Home Is Not A Place</h2>
+              <p class="checkout-item-name">Blue coffee table book</p>
+              <h4 class="checkout-price">$25.00</h4>
+            </div>
+          </div>
+
+          <h1 class="checkout-total checkout-total-display">Total: $45.00</h1>
+        </div>
+
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- BRANDING SECTION // -->
+    <section id="branding_elements" class="body-align">
+      <h1>Branding Elements</h1>
+
+      <section class="element">
+        <h2>Company Details</h2>
+        <p class="text-display-p">
+          Oak's Archive is a collector's store, housing a range of books, zines,
+          catalogues, postcards, prints, and stationary items which provoke
+          serene naturalistic imagery. The store draws in minimalists, alongside
+          editorial and literary lovers with an appreciation for natural
+          aesthetics as represented in the products Oak's Archive sells. The
+          simple yet high quality items draw customers in, offering
+          functionality that blends seamlessly in everyday life while bringing
+          in elements of the outdoors to the comforts of one's home.
+        </p>
+      </section>
+
+      <section class="element">
+        <h2>Brand Components</h2>
+        <figure>
+          <img
+            src="img/branding.png"
+            alt="Colour Palette"
+            width="770"
+            height="800"
+          />
+        </figure>
+      </section>
+
+      <h1>Extra Exploration</h1>
+
+      <section class="element">
+
+        <footer class="footer-layout">
+          <h1>Subscribe!</h1>
+          <p>Stay updated with monthly newsletters</p>
+
+            <div class="footer-container">
+
+              <div class="input-field">
+                <label>                     
+                  <input class="input-display" type="text" placeholder="bobsimpson@gmail.com">
+                </label>
+              </div>
+
+              <div>
+                <input class="submit-botton" type="submit" value="Submit">
+              </div>
+
+            </div>
+        </footer>
+      </section>
+
+      <section class="element">
+        <h2>Persona</h2>
+        <figure>
+          <img src="img/persona.png" alt="Persona" width="770" height="250" />
+        </figure>
+
+          <h4>Overview</h4>
+          <p class="text-display-p">
+            Jordan is a thirty year-old, full-time naturalist journalist with a
+            passion for old fashion aesthetics, literature and publishing. His
+            walls are lined bookshelves filled with botany and nature books,
+            while his coffee table often features a seasonal book with ocean
+            photography. Jordan enjoys sending postcards to his family overseas
+            with cover designs that match his style.
+          </p>
+          <h4>Behaviour</h4>
+          <p class="text-display-p">
+            He often looks for these niche books at stores that match his
+            interest on both a content and visual level. He also purchases
+            postcards with nice imagery to fill up his letter-writing storage.
+            However, Jordan faces trouble at times because many books stores
+            feature mainstream books and products, rather than topics and styles
+            that appeal to him. Because of this, he turns to online stores to hunt down products, which also proves to be challenging because even online stores do not offer many options, causing him to look through many stores.
+          </p>
+          <h4>Goals</h4>
+          <ol>
+            <li class="text-display-p">
+              Discovering books, publishing material, and writing stationary
+              that fit within his niche aesthetics and hobbies
+            </li>
+            <li class="text-display-p">
+              Purchasing books and stationary efficiently by discovering a company that sells many products that match his aesthetic in one site 
+            </li>
+          </ol>
+          <h4>Weaknesses</h4>
+          <ol>
+            <li class="text-display-p">
+              Stores with too many mainstream and popularized books and designs that does not fit his interest nor match his home aesthetic
+            </li>
+            <li class="text-display-p">
+              Sites that are difficult to navigate when trying to purchase items
+            </li>
+          </ol>
+      </section>
+    </section>
+
+
+    <section id="citations" class="body-align">
+      <h1>Citations</h1>
+
+      <ol>
+        <li>Book Design (n.d.). <strong>Flamingo Estate Editions [Pinterest Post]</strong>. Retrieved from <a href="https://ca.pinterest.com/pin/24206916745656819/">https://ca.pinterest.com/pin/24206916745656819/</a
+          >
+        </li>
+        <li>B, R (n.d.). <strong>Image of a Sea Book [Pinterest Post]</strong>. Retrieved from <a href="https://ca.pinterest.com/pin/33073378510526886/">https://ca.pinterest.com/pin/33073378510526886/</a
+          >
+       </li>
+        <li>D H (n.d.). <strong>Image of a Yellow Book [Pinterest Post]</strong>. Retrieved from <a href="https://ca.pinterest.com/pin/76350156176936511/">https://ca.pinterest.com/pin/76350156176936511/</a
+          >
+        </li>
+        <li>DUNYA WORLDWIDE (n.d.). <strong>Image of a Blue Book [Pinterest Post]</strong>. Retrieved from <a href="https://ca.pinterest.com/pin/68748526857/">https://ca.pinterest.com/pin/68748526857/</a
+          >
+        </li>
+        <li>P, B (n.d.). <strong>Image of a Galaxy Book [Pinterest Post]</strong>. Retrieved from <a href="https://ca.pinterest.com/pin/2040762328135728/">https://ca.pinterest.com/pin/2040762328135728/</a
+          >
+        </li>
+        <li>Viv (n.d.). <strong>Image of a Blue Book [Pinterest Post]</strong>. Retrieved from <a href="https://ca.pinterest.com/pin/3307399722097111/">https://ca.pinterest.com/pin/3307399722097111/</a
+          >
+        </li>
+        <li>
+          밍. (n.d.).
+          <strong>Postcards [Pinterest Post]</strong>. Retrieved from
+          <a href="https://ca.pinterest.com/pin/140806234123986/"
+            >https://ca.pinterest.com/pin/140806234123986/</a
+          >
+        </li>
+        <li>
+          Alksvaa, A. (n.d.).
+          <strong>Stack of Bookos [Pinterest Post]</strong>. Retrieved from
+          <a href="https://ca.pinterest.com/pin/5488830791708562/"
+            >https://ca.pinterest.com/pin/5488830791708562/</a
+          >
+        </li>
+        <li>
+          Bao, A. (n.d.).
+          <strong>Plant prints [Pinterest Post]</strong>. Retrieved from
+          <a href="https://ca.pinterest.com/pin/68749582201/"
+            >https://ca.pinterest.com/pin/68749582201/</a
+          >
+        </li>
+
+        <li>
+          Coyler, C. (2013, April 8).
+          <strong> CSS Flexbox Layout Guide </strong>. Retrieved from
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            >https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a
+          >
+        </li>
+        
+        <li>
+          Debeney, M. (n.d.).
+          <strong>Newspaper on Chair [Pinterest Post]</strong>. Retrieved from
+          <a href="https://ca.pinterest.com/pin/10344274141410904/"
+            >https://ca.pinterest.com/pin/10344274141410904/</a
+          >
+        </li>
+        <li>
+          Lagrange, A. (n.d.).
+          <strong>Book [Pinterest Post]</strong>. Retrieved from
+          <a href="https://ca.pinterest.com/pin/42573158973510064/"
+            >https://ca.pinterest.com/pin/42573158973510064/</a
+          >
+        </li>
+        <li>
+          Miedinger, M. & Hoffmann,E. Designers. 1957.
+          <strong>Helvetica [Font]</strong>. Retrieved from
+          <a href="https://font.download/font/helvetica-255"
+            >https://font.download/font/helvetica-255</a
+          >
+        </li>
+        <li>Papier. (n.d.). <strong>Papier</strong>. Retrieved from <a href="https://www.papier.com/ca">https://www.papier.com/ca</a></li>
+        <li>
+          Stack Overflow. (n.d.). <strong>How do i create and link another webpage with Visual Studio Code?</strong>. Retrieved from<a href="https://stackoverflow.com/questions/59731709/how-do-i-create-and-link-another-webpage-with-visual-studio-code">https://stackoverflow.com/questions/59731709/how-do-i-create-and-link-another-webpage-with-visual-studio-code</a>
+        </li>
+        <li>
+          Stan, Tony. Designer. 1997.
+          <strong>Apple Garamond Light [Font]</strong>. Retrieved from
+          <a href="https://www.dafont.com/apple-garamond.font"
+            >https://www.dafont.com/apple-garamond.font</a
+          >
+        </li>
+        <li>
+          SoundCode. (2016, September 22).
+          <strong>Customize Radio Button with CSS</strong>. Retrieved from
+          <a href="https://www.markheath.net/post/2016/9/22/customize-radio-button-css"
+            >https://www.markheath.net/post/2016/9/22/customize-radio-button-css</a
+          >
+        </li>
+        <li>
+          White, H. R.. (n.d.).
+          <strong>Magazines [Pinterest Post]</strong>. Retrieved from
+          <a href="https://ca.pinterest.com/pin/850265604695293365/"
+            >https://ca.pinterest.com/pin/850265604695293365/</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>HTML Class Attribute</strong>. Retrieved from
+          <a href="https://www.w3schools.com/html/html_classes.asp"
+            >https://www.w3schools.com/html/html_classes.asp</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>CSS Font</strong>. Retrieved from
+          <a href="https://www.w3schools.com/css/css_font.asp"
+            >https://www.w3schools.com/css/css_font.asp</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>HTML Forms</strong>. Retrieved from
+          <a href="https://www.w3schools.com/html/html_forms.asp"
+            >https://www.w3schools.com/html/html_forms.asp</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>HTML &lt;input type="radio"&gt;</strong>. Retrieved from
+          <a href="https://www.w3schools.com/tags/att_input_type_radio.asp"
+            >https://www.w3schools.com/tags/att_input_type_radio.asp</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>Ordered HTML List</strong>. Retrieved from
+          <a href="https://www.w3schools.com/html/html_lists_ordered.asp"
+            >https://www.w3schools.com/html/html_lists_ordered.asp</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>CSS Margins</strong>. Retrieved from
+          <a href="https://www.w3schools.com/css/css_margin.asp"
+            >https://www.w3schools.com/css/css_margin.asp</a
+          >
+        </li>
+        <li>
+          W3Schools. (n.d.).
+          <strong>CSS margin-left Property</strong>. Retrieved from
+          <a href="https://www.w3schools.com/cssref/pr_margin-left.php"
+            >https://www.w3schools.com/cssref/pr_margin-left.php</a
+          >
+        </li>
+      </ol>
+
+    </section>
+
+
+  </body>
+</html>

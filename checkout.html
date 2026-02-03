@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Style Guide</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+    <header class="header-layout">
+      <div class="header-display">
+        <a class="header-nav-display cart-nav" href="checkout.html">Cart</a>
+        <h1>Oak's Archive</h1>
+          <nav>     
+            <a class="header-nav-display" href="index.html">Home</a>   
+            <a class="header-nav-display" href="products.html">Books</a>
+            <a class="header-nav-display" href="products.html">Print</a>
+            <a class="header-nav-display" href="products.html">Stationary</a>
+            <a class="header-nav-display" href="products.html">Sales</a>
+          </nav>
+      </div>
+    </header>
+
+    <section class="body-align">
+        <div class="checkout-container">
+
+        <div class="order-form">
+          <h1 class="page-header">Basket</h1>
+          <h2 class="header-subtext">Confirm Your Order</h2>
+ 
+          <div class="checkout-display">
+            <figure>
+              <a href="https://ca.pinterest.com/pin/76350156176936511/" target="_blank"
+              ><img class="img-element"
+                src="img/book.jpg"
+                alt="A Yellow Book"
+                width="150"
+                height="150"
+            /></a>
+            </figure>
+
+            <div class="checkout-item-text">
+              <h2 class="checkout-item-name"> Yellow Archive</h2>
+              <p class="checkout-item-name"> Henri Michaux's Yellow Archive Book</p>
+              <h4 class="checkout-price">$20.00</h4>
+            </div>
+
+          </div>
+
+          <div class="checkout-display">
+            <figure>
+              <a href="https://ca.pinterest.com/pin/68748526857/" target="_blank"
+              ><img class="img-element"
+                src="img/book2.jpg"
+                alt="Little Blue Book"
+                width="150"
+                height="150"
+            /></a>
+            </figure>
+            <div class="checkout-item-text">
+              <h2 class="checkout-item-name"> Home Is Not A Place</h2>
+              <p class="checkout-item-name">Blue coffee table book</p>
+              <h4 class="checkout-price">$25.00</h4>
+            </div>
+          </div>
+
+          <div class="checkout-total-display"> 
+            <h1 class="checkout-total">Total: $45.00</h1>
+          </div>
+        </div>
+
+            <div class="order-form">
+              <div>
+                <h1 class="page-header">Checkout</h1>
+
+                <div class="radio-button">
+                  <input class="radio-input" type="radio" id="card" name="payment_methods" value="Card">
+                  <label class="radio-label" for="card">Card</label> 
+
+                  <input class="radio-input" type="radio" id="apple-pay" name="payment_methods" value="Apple Pay">
+                  <label class="radio-label" for="apple-pay">Apple Pay</label>
+                </div>          
+
+                <div class="input-field">
+                  <label class="checkout-label"> 
+                    Name on Card 
+                    <input class="input-display" type="text" placeholder="Ex. Bob Simpson">
+                  </label>
+                  <label class="checkout-label">
+                    Postal Code 
+                    <input class="input-display" type="text" placeholder="ABC 123">
+                </label>
+                </div>
+              </div>
+                <div>
+                  <input class="submit-botton" type="submit" value="Order">
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </body>
+
+</html>
