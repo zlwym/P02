@@ -1,0 +1,204 @@
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Violet's Pet Shop</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/oci4dcx.css">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav>     
+        <div class="website-nav">
+        <h4><a href="index.html">Style Guide</a></h4>
+          <h4><a href = "products.html">Product Listing</a></h4>
+          <h4><a href = "checkout.html">Checkout</a></h4>
+        </div>
+      </nav>
+
+      <h2>Your Cart</h2>
+
+    </header>
+
+    <!-- Cart -->
+
+          <section class="element">
+
+        <div class="cart">
+
+          <div class="item">
+            <div class="image-container">
+              <img src="img/dragon_dog_toy.webp" alt="a purple dragon plush dog toy">
+            </div>
+
+            <div class="text-container">
+              <h3>Dragon Squeaky Toy</h3>
+              <p>Purple</p>
+            </div>
+            <div class="text-container">
+              <h4>Quantity</h4>
+              <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            </div>
+            <div class="text-container">
+              <h4>Price</h4>
+              <p>$12.50 CAD</p>
+            </div>
+            <div class="text-container">
+              <h4>Total</h4>
+              <p>$14.00 CAD</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image-container">
+              <img src="img/dog_food.png" alt="three bags of colourful dog food">
+            </div>
+
+            <div class="text-container">
+              <h3>Organic Puppy Kibble</h3>
+              <p>Chicken</p>
+            </div>
+            <div class="text-container">
+              <h4>Quantity</h4>
+              <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            </div>
+            <div class="text-container">
+              <h4>Price</h4>
+              <p>$32.99 CAD</p>
+            </div>
+            <div class="text-container">
+              <h4>Total</h4>
+              <p>$36.95 CAD</p>
+            </div>
+          </div>
+          <div class="costs">
+            <div class="subtotal">
+              <h4>Subtotal</h4>
+              <p>$50.95 CAD</p>
+            </div>
+
+            <div class="shipping">
+              <h4>Shipping</h4>
+              <p>Free</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Checkout -->
+
+      <section class="element">
+        <h2>Checkout</h2>
+
+
+          <h4>Shipping</h4>
+          <div class="shipping-info">
+            <form>
+              <fieldset class="input-field">
+                <div class="row">
+                    <label>First Name
+                    <input type="text">
+                    </label>
+
+                    <label>Last Name
+                    <input type="text">
+                    </label>
+
+                </div>
+
+                
+                <label>Address 1
+                <input type="text" placeholder="Street address">
+                </label>
+
+                <label>Address 2
+                    <input type="text" placeholder="Apartment, suite, unit, floor">
+                </label>
+
+
+                <div class="row">
+                    <label>Postal code
+                        <input type="text">
+                    </label>
+
+                    <label>City
+                        <input type="text">
+                    </label>
+
+                    <label>Province
+                        <input type="text">
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label>Phone number
+                        <input type="text">
+                    </label>
+                    <label>Email address
+                        <input type="text">
+                    </label>
+                </div>
+
+              </fieldset>
+              </form>
+
+            </div>
+
+          <h4>Payment</h4>
+          <div class="radio">
+            <input class="radio-input" type="radio" name="payment" value="Visa" id="pay-visa">
+            <label class="radio-label" for="pay-visa">Visa</label>
+            
+            <input class="radio-input" type="radio" name="payment" value="Mastercard" id="pay-mastercard" >
+            <label class="radio-label" for="pay-mastercard">Mastercard</label>
+
+            <input class="radio-input" type="radio" name="payment" value="PayPal" id="pay-paypal">
+            <label class="radio-label" for="pay-paypal">PayPal</label>
+          </div>
+            
+          <div class="card-info">
+            <form>
+              <fieldset class="input-field">
+
+                <label>Card number
+                  <input type="text" placeholder="1234 5678 9101 1121">
+                </label>
+
+                <label>Cardholder name
+                    <input type="text">
+                </label>
+
+                <div class="row">
+
+                    <label>Expiry date
+                    <input type="text" placeholder="MM/YY">
+                    </label>
+
+                    <label>CVV
+                    <input type="text" placeholder="123">
+                    </label>
+
+                </div>
+
+              <input type="submit" name="place order" value="place order">
+              </fieldset>
+              </form>
+
+            </div>
+
+      </section>
+
+    </body>
+</html>

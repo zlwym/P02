@@ -1,1 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Violet's Pet Shop</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/oci4dcx.css">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav>     
+        
+        <div class="website-nav">
+          <h4><a href="index.html">Style Guide</a></h4>
+          <h4><a href = "products.html">Product Listing</a></h4>
+          <h4><a href = "checkout.html">Checkout</a></h4>
+        </div>
+        <div class="style-guide-nav">
+          <h4><a href="#interactive_elements">Interactive Elements</a></h4>
+          <h4><a href="#text_elements">Text Elements</a></h4>
+          <h4><a href="#combined_elements">Combined Elements</a></h4>
+          <h4><a href="#citations">Citations</a></h4>
+        </div>
+
+      </nav>
+
+      <h1>Violet's Pet Supply</h1>
+
+    </header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <!-- An in text link to the Wikipedia page about dog food. Used IAT 339 Week 1 example as a resource. -->
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+        <h4>Sample code:</h4>
+        <code>&lt;a class="in-text-link" href = "https://en.wikipedia.org/wiki/Dog_food">dog food&lt;/a></code>
+        <h4>Rendered element:</h4>
+        <a class="in-text-link" href = "https://en.wikipedia.org/wiki/Dog_food">dog food</a>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <!-- Submit and reset buttons. Used https://learn.shayhowe.com/html-css/building-forms/ and https://www.w3schools.com/tags/att_input_type_reset.asp as resources. -->
+
+        <h4>CSS selector:</h4>
+        <p>input[type=submit]</p>
+        <p>input[type=reset]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="submit" name="submit" value="submit"></code>
+        <code>&lt;input type="reset" name="reset" value="reset"></code>
+
+        <h4>Rendered element:</h4>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="reset">
+
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <!-- A text input field with a label. Used IAT 339 Week 1 example as a resource. -->
+         <h4>CSS selector:</h4>
+         <p>.input-field</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;form>
+          &lt;fieldset class="input-field">
+            &lt;label>Label
+              &lt;input type="text" name="input">
+            &lt;/label>
+            &lt;/fieldset>
+            &lt;/form></code>
+
+          <h4>Rendered element:</h4>
+          
+          <form>
+          <fieldset class="input-field">
+            <label>Label
+              <input type="text" name="input">
+            </label>
+            </fieldset>
+            </form>
+
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <!-- Radio Buttons. Used https://learn.shayhowe.com/html-css/building-forms/ as a resource.-->
+
+        <h4>CSS selector:</h4>
+        <p>.radio</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="radio-input" type="radio" name="button" value="sandra" id="button1">
+          &lt;label class="radio-label" for="button1">Sandra&lt;/label></code>
+
+        <h4>Rendered element:</h4>
+        <div class="radio">
+          <input class="radio-input" type="radio" name="button" value="sandra" id="button1">
+          <label class="radio-label" for="button1">Sandra</label>
+          
+          <input class="radio-input" type="radio" name="button" value="zoe" id="button2" >
+          <label class="radio-label" for="button2">Zoe</label>
+
+          <input class="radio-input" type="radio" name="button" value="keyaan" id="button3">
+          <label class="radio-label" for="button3">Keyaan</label>
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <!-- An image that takes user to Wikipedia page about dog food when clicked. Used IAT 339 Week 1 example and https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image as resources. -->
+         <h4>CSS selector:</h4>
+         <p>.image-link</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;a href="https://en.wikipedia.org/wiki/Dog_food">
+          &lt;img src="img/Shih-Tzu-On-White-01.avif" alt="shih tzu dog">
+        &lt;/a></code>
+
+        <h4>Rendered element:</h4>
+        <p></p>
+        <a href="https://en.wikipedia.org/wiki/Dog_food">
+          <img class="image-link" src="img/dog_food.png" alt="colourful pet food bags">
+        </a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+       <h4>CSS selector:</h4>
+       <p>h1, h2, h3, <h4></h4></p>
+       <h4>Sample code:</h4>
+       <code>&lt;h1>Heading 1&lt;/h1></code>
+       
+       <h4>Rendered elements:</h4>
+       <h1>Heading 1</h1>
+       <h2>Heading 2</h2>
+       <h3>Heading 3</h3>
+       <h4>Heading 4</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+         <h4>CSS Selector:</h4>
+         <p>p</p>
+         
+         <h4>Sample code:</h4>
+         <code>&lt;p>This is a paragraph about dogs. Dogs are a popular pet, earning them the title "man's best friend". I have a dog and many of my friends and family have dogs. They come in a variety of breeds, colours, and sizes. Each type of dog has unique characteristics, such as heightened sense of smell or good stamina. Dogs have been a notable animal since early human history, appearing in ancient hieroglyphics and art pieces.&lt;/p></code>
+
+         <h4>Rendered element:</h4>
+        <p>This is a paragraph about dogs. Dogs are a popular pet, earning them the title "man's best friend". I have a dog and many of my friends and family have dogs. They come in a variety of breeds, colours, and sizes. Each type of dog has unique characteristics, such as heightened sense of smell or good stamina. Dogs have been a notable animal since early human history, appearing in ancient hieroglyphics and art pieces.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+          <!-- Numbered List. Used https://www.w3schools.com/html/html_lists_ordered.asp as a resource. -->
+        
+          <h4>CSS selector:</h4>
+          <p>ol, li</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ol>
+          &lt;li>One&lt;/li>
+          &lt;li>Two&lt;/li>
+          &lt;li>Three&lt;/li>
+        </ol></code>
+       
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Food&lt;/a&gt; 
+          &lt;a href="#" class="button"&gt;Beds&lt;/a&gt;
+          &lt;a href="#" class="button"&gt;Toys&lt;/a&gt;
+          &lt;a href="#" class="button"&gt;Leashes and Collars&lt;/a&gt;
+          &lt;a href="#" class="button"&gt;Accessories&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Food</a>
+        <a class="button-nav" href="#">Beds</a>
+        <a class="button-nav" href="#">Toys</a>
+        <a class="button-nav" href="#">Leashes and Collars</a>
+        <a class="button-nav" href="#">Accessories</a>
+
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <div class="product-listing">
+
+          <div class="image-container">
+            <img src="img/dragon_dog_toy.webp" alt="a purple dragon plush dog toy">
+          </div>
+
+          <div class="text-container">
+            <h2>Dragon Squeaky Toy</h2>
+            <h3>$12.50</h3>
+
+            <!-- Used https://codepen.io/marhdev/pen/poyNEay as a resource -->
+            <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            <h4>Description</h4>
+
+            <p>This plush dragon squeaky toy is soft, cuddly, and packed with fun. Designed for tossing, fetching, and snuggling, it features a built-in squeaker to keep your dog engaged and entertained. Perfect for gentle chewers, this whimsical dragon adds a pop of colour and excitement to your pup's toy collection.</p>
+
+            <h4><a href="">Materials and care</a></h4>
+
+            <a class="button-nav" href="checkout.html">Add to cart</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <div class="payment">
+          <h4>Payment</h4>
+          <div class="radio">
+            <input class="radio-input" type="radio" name="payment" value="Visa" id="pay-visa">
+            <label class="radio-label" for="pay-visa">Visa</label>
+            
+            <input class="radio-input" type="radio" name="payment" value="Mastercard" id="pay-mastercard" >
+            <label class="radio-label" for="pay-mastercard">Mastercard</label>
+
+            <input class="radio-input" type="radio" name="payment" value="PayPal" id="pay-paypal">
+            <label class="radio-label" for="pay-paypal">PayPal</label>
+          </div>
+            
+          <div class="card-info">
+            <form>
+              <fieldset class="input-field">
+                <label>Card Number
+                  <input type="text">
+                </label>
+                <label>Expiry Date
+                  <input type="text">
+                </label>
+                <label>CVV
+                  <input type="text">
+                </label>
+              <input type="submit" name="place order" value="place order">
+              </fieldset>
+              </form>
+
+            </div>
+          </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <div class="cart">
+
+          <div class="item">
+            <div class="image-container">
+              <img src="img/dragon_dog_toy.webp" alt="a purple dragon plush dog toy">
+            </div>
+
+            <div class="text-container">
+              <h3>Dragon Squeaky Toy</h3>
+              <p>Purple</p>
+            </div>
+            <div class="text-container">
+              <h4>Quantity</h4>
+              <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            </div>
+            <div class="text-container">
+              <h4>Price</h4>
+              <p>$12.50 CAD</p>
+            </div>
+            <div class="text-container">
+              <h4>Total</h4>
+              <p>$14.00 CAD</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image-container">
+              <img src="img/dog_food.png" alt="three bags of colourful dog food">
+            </div>
+
+            <div class="text-container">
+              <h3>Organic Puppy Kibble</h3>
+              <p>Chicken</p>
+            </div>
+            <div class="text-container">
+              <h4>Quantity</h4>
+              <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            </div>
+            <div class="text-container">
+              <h4>Price</h4>
+              <p>$32.99 CAD</p>
+            </div>
+            <div class="text-container">
+              <h4>Total</h4>
+              <p>$36.95 CAD</p>
+            </div>
+          </div>
+          <div class="costs">
+            <div class="subtotal">
+              <h4>Subtotal</h4>
+              <p>$50.95 CAD</p>
+            </div>
+
+            <div class="shipping">
+              <h4>Shipping</h4>
+              <p>Free</p>
+            </div>
+          </div>
+
+        </div>
+          <a class="button-nav" href="checkout.html">Checkout</a>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section class="element">
+
+      <h3>exploration</h3>
+
+      <h2>Leave a review</h2>
+
+      <form>
+              <fieldset class="input-field">
+                  <label>name
+                    <input type="text">
+                  </label>
+                  <label>Review
+                  <textarea name="review"></textarea>
+                  </label>
+
+                  <input type="submit" name="submit" value="submit">
+
+              </fieldset>
+              </form>
+      
+    </section>
+
+
+    <section id="Basic-Branding-Ideas">
+
+      <h3>Branding</h3>
+
+      <p>Violet's Pet Shop offers a curated selection of high-quality, locally sourced dog and cat food, toys, accessories, and grooming supplies. The shop prioritizes pet health and wellbeing, selling products from local brands to increase sustainability.</p>
+      <p>To potential customers, the company is a passionate, knowledgable entity that loves animals and helping people care for theirs. It is approachable, trustworthy, and enthusiastic.</p>
+      <p>The company might entice someone to purchase a product or service because they are drawn in by the shop's commitment to quality, locally sourced goods, pet health and wellbeing, and thoughtfully curated product offerings. The shop has genuine care for pets and makes the shopping experience personable and reliable.</p>
+
+      <div class = "brand-images">
+
+      <h3>Brand Components</h3>
+      <p>Asterisk Sans for headings</p>
+      <img src="img/asterisk-sans.png" alt="Formiga font">
+      <p>Brisbane for body copy</p>
+      <img src="img/brisbane.png" alt="Helvetica Font" >
+
+      <p>Colour palette</p>
+      <img src="img/colour_palette.png" alt="Colour palette" >
+
+      <p>Potential imagery and/or art direction</p>
+      <img src="img/dog_food.png" alt ="Colourful dog food bags">
+      <img src="img/branding_example.png" alt ="Pet website with dog beside it">
+      <img src="img/dog_toys.jpg" alt ="Spread of dog toys on a table">
+
+      </div>
+
+
+
+    </section>
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ol>
+        <li>Leinster, Troy. Designer. 2012. <strong>Brisbane [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/brisbane">https://fonts.adobe.com/fonts/brisbane</a></li>
+        <li>Rowland, Dave. Designer. N.D. <strong>Asterisk Sans Variable [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/asterisk-sans-variable">https://fonts.adobe.com/fonts/asterisk-sans-variable</a></li>
+        <li>Howe, Shay. <strong>Building Forms. </strong><a href="https://learn.shayhowe.com/html-css/building-forms/">https://learn.shayhowe.com/html-css/building-forms/</a></li>
+        <li>W3 Schools. <strong>HTML input type reset. </strong><a href= "https://www.w3schools.com/tags/att_input_type_reset.asp">https://www.w3schools.com/tags/att_input_type_reset.asp</a></li>
+        <li>W3 Schools. <strong>Image as a Link. </strong><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image</a></li>
+      
+        <li>W3 Schools. <strong>HTML ordered lists. </strong><a href="https://www.w3schools.com/html/html_lists_ordered.asp">https://www.w3schools.com/html/html_lists_ordered.asp</a></li>
+        <li>marhdez.dev. <strong>Quantity input. </strong> <a href="https://codepen.io/marhdev/pen/poyNEay">https://codepen.io/marhdev/pen/poyNEay</a></li>
+        <li>Coyier, Chris. 2016.<strong>Style list markers in CSS. </strong> <a href="https://css-tricks.com/style-list-markers-css/">https://css-tricks.com/style-list-markers-css/</a></li>
+        <li>Dcode. 2020<strong>Created style radio groups - CSS tutorial. </strong><a href="https://www.youtube.com/watch?v=GDh9uToZkYg">https://www.youtube.com/watch?v=GDh9uToZkYg</a></li>
+      </ol>
+    </section>
+
+
+  </body>
+</html>
 
