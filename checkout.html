@@ -1,3 +1,5 @@
+<!--
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -86,6 +88,15 @@
                     Name on Card 
                     <input class="input-display" type="text" placeholder="Ex. Bob Simpson">
                   </label>
+                  <label>Card Number
+                    <input class="input-display" placeholder="1234 5678 9101 1109">
+                  </label>
+                  <label>Expiration Date
+                    <input class="input-display" placeholder="MM/YY">
+                  </label>
+                  <label>CVV
+                    <input class="input-display" placeholder="123">
+                  </label>
                   <label class="checkout-label">
                     Postal Code 
                     <input class="input-display" type="text" placeholder="ABC 123">
@@ -101,4 +112,154 @@
 
     </body>
 
+</html>
+
+-->
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/oci4dcx.css">
+
+  </head>
+
+  <body>
+
+    <header class="header-layout">
+      <div class="header-display">
+        <a class="header-nav-display cart-nav" href="checkout.html">Cart</a>
+        <h1>Oak's Archive</h1>
+          <nav>     
+            <a class="header-nav-display" href="index.html">Home</a>   
+            <a class="header-nav-display" href="products.html">Books</a>
+            <a class="header-nav-display" href="products.html">Print</a>
+            <a class="header-nav-display" href="products.html">Stationary</a>
+            <a class="header-nav-display" href="products.html">Sales</a>
+          </nav>
+      </div>
+    </header>
+
+    <!-- Cart -->
+
+          <section class="element">
+            <section class="body-align">
+
+        <div class="cart">
+
+          <div class="item">
+            <div class="image-container">
+              <img src="img/dragon_dog_toy.webp" alt="a purple dragon plush dog toy">
+            </div>
+
+            <div class="text-container">
+              <h3>Dragon Squeaky Toy</h3>
+              <p>Purple</p>
+            </div>
+            <div class="text-container">
+              <h4>Quantity</h4>
+              <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            </div>
+            <div class="text-container">
+              <h4>Price</h4>
+              <p>$12.50 CAD</p>
+            </div>
+            <div class="text-container">
+              <h4>Total</h4>
+              <p>$14.00 CAD</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image-container">
+              <img src="img/dog_food.png" alt="three bags of colourful dog food">
+            </div>
+
+            <div class="text-container">
+              <h3>Organic Puppy Kibble</h3>
+              <p>Chicken</p>
+            </div>
+            <div class="text-container">
+              <h4>Quantity</h4>
+              <div class="quantity-input">
+	            <input class="product-quantity" type="number" name="product-quantity" min="0" max="10" value="1">
+            </div>
+            </div>
+            <div class="text-container">
+              <h4>Price</h4>
+              <p>$32.99 CAD</p>
+            </div>
+            <div class="text-container">
+              <h4>Total</h4>
+              <p>$36.95 CAD</p>
+            </div>
+          </div>
+          <div class="costs">
+            <div class="subtotal">
+              <h4>Subtotal</h4>
+              <p>$50.95 CAD</p>
+            </div>
+
+            <div class="shipping">
+              <h4>Shipping</h4>
+              <p>Free</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      <!-- Checkout -->
+
+      <section class="element">
+        <h2>Checkout</h2>
+
+
+          <h4>Shipping</h4>
+          <h2></h2>
+
+          <div class="shipping-info">
+                        <div class="order-form">
+              <div>
+                <h1 class="page-header">Checkout</h1>
+
+                <div class="radio-button">
+                  <input class="radio-input" type="radio" id="card" name="payment_methods" value="Card">
+                  <label class="radio-label" for="card">Card</label> 
+
+                  <input class="radio-input" type="radio" id="apple-pay" name="payment_methods" value="Apple Pay">
+                  <label class="radio-label" for="apple-pay">Apple Pay</label>
+                </div>          
+
+                <div class="input-field">
+                  <label class="checkout-label"> 
+                    Name on Card 
+                    <input class="input-display" type="text" placeholder="Ex. Bob Simpson">
+                  </label>
+                  <label class="checkout-label">
+                    Postal Code 
+                    <input class="input-display" type="text" placeholder="ABC 123">
+                </label>
+                </div>
+              </div>
+                <div>
+                  <input class="submit-botton" type="submit" value="Order">
+                </div>
+            </div>
+
+            </div>
+
+          
+
+
+      </section>
+      </section>
+
+    </body>
 </html>
