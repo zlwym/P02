@@ -1,1 +1,480 @@
 
+<!-- All code referenced from lecture + assignment example codes -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header-layout">
+
+      <div class="header-display">
+        <a class="header-nav-display cart-nav" href="checkout.html">Cart</a>
+
+        <h1>Nova's Archive</h1>
+          <nav>     
+            <a class="header-nav-display" href="index.html">Home</a>   
+            <a class="header-nav-display" href="products.html">Stars</a>
+            <a class="header-nav-display" href="products.html">Constellations</a>
+            <a class="header-nav-display" href="products.html">Galaxies</a>
+            <a class="header-nav-display" href="products.html">Bundles</a>
+          </nav>
+      
+      </div>
+    </header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" class="body-align">
+
+      <h1>Interactive Elements</h1>
+
+        <section class="element">
+            <h2>In-text link</h2>
+
+            <h4>CSS selector:</h4>
+            <p>.in-text-link</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;a class="in-text-link" href="https://www.papier.com/ca"&gt;View Products&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a href="https://www.papier.com/ca" target="_blank">View Products</a>
+
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+
+            <h2>Navigation Link</h2>
+
+            <h4>CSS selector:</h4>
+            <p>.button-display</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;a href="#" class="button"&gt;Shop&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a class="button-display" href="#">Shop</a>
+
+        </section>
+
+
+        <section class="element">
+            <h2>Submit/Reset Buttons</h2>
+
+            <h4>CSS selector:</h4>
+            <p>.submit-botton</p>
+
+            <h4>Sample code:</h4>
+            <code>input type="submit" value="Submit"</code>
+
+            <!-- Code referenced from: https://www.w3schools.com/html/html_forms.asp -->
+            <h4>Rendered element:</h4>
+            <input class="submit-botton" type="submit" value="Submit">
+
+        </section>
+
+
+        <section class="element">
+            <h2>Text Input Field with Label</h2>
+
+            <h4>CSS selector:</h4>
+            <p>N/A</p>
+
+            <h4>Sample code:</h4>
+            <code>input type="text" placeholder="Bob"</code>
+
+            <h4>Rendered element:</h4>
+
+            <div class="input-field">
+              <label> 
+                First Name 
+                <input class="input-display" type="text" placeholder="Bob">
+                
+                Last Name 
+                <input class="input-display" type="text" placeholder="Simpson">
+              </label>
+            </div>
+        
+        </section>
+
+        <section class="element">
+            <h2>Radio Button with Label</h2>
+
+            <h4>CSS selector:</h4>
+            <p>N/A</p>
+
+            <h4>Sample code:</h4>
+            <code>input type="radio" id="volume1" name="volumes" value="volume 1"</code>
+
+            <!-- Code referenced from: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+            <h4>Rendered element:</h4>
+
+            <div class="radio-button">
+              <div>
+                <input class="radio-input" type="radio" id="volume1" name="volumes" value="volume 1">
+                <label class="radio-label" for="volume1">Volume 1</label> 
+              </div>
+              <div>
+                <input class="radio-input" type="radio" id="volume2" name="volumes" value="volume 2">
+                <label class="radio-label" for="volume2">Volume 2</label>
+              </div>
+            </div>
+        
+        </section>
+      </div>
+
+
+      <section class="element">
+        <h2>Image as a Link</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank"&gt;&lt;img src="img/book.jpg"
+            alt="A Yellow Book"
+            width="400"
+            height="400"/&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element</h4>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank"
+          ><img class="img-element"
+            src="img/andromedas_cluster.png"
+            alt="Andromeda's cluster"
+            width="400"
+            height="400"
+        /></a>
+        </figure>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" class="body-align">
+      <h1>Text Elements</h1>
+
+      <section class="element">
+        <h2>Headings</h2>
+
+        <h4>CSS selector</h4>
+        <p>h1, h2, h3, h4 { ... } </p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;Header 1&lt;h1&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1 class="text-display">Header 1</h1>
+        <h2 class="text-display-h2 text-display">Header 2</h2>
+        <h3 class="text-display">Header 3</h3>
+        <h4 class="text-display-h4 text-display">Header 4</h4>
+      </section>
+
+      <section class="element">
+        <h2>Paragraphs</h2>
+
+        <h4>CSS selector</h4>
+        <p>p { ... }</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Header 1&lt;p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p class="text-display-p">Search through our naturalist collection with over 7 million books, ranging from books, zines, catalogues, postcards, prints, and stationary. Whether you're looking for your next non-fiction, coffee table decor, visual inspiration, or gift for a loved one, explore and discover what speaks to you at Oak's Archive!</p>
+
+      </section>
+
+      <section class="element">
+        <h2>Numbered Lists</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&ltol type="1"&gt; &lt;li&gt;Novels&lt;li&gt; ol&gt;</code>
+
+        <!-- Code referenced from:  https://www.w3schools.com/html/html_lists_ordered.asp -->
+        <h4>Rendered element:</h4>
+        <ol type="1">
+          <li>Novels</li>
+          <li>Zines</li>
+          <li>Stationary</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements" class="body-align">
+      <h1>Combined Elements</h1>
+
+      <section class="element">
+        <h2>Main Navigation</h2>
+
+        <h4>CSS selector</h4>
+        <p>nav { ... }</p>
+        
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#combined_elements">Home&lt;/a</code>
+
+      <h4>Rendered element</h4>
+
+      <div class="header-layout">
+        <nav>        
+            <a class="header-nav-display" href="index.html">Home</a>   
+            <a class="header-nav-display" href="products.html">Stars</a>
+            <a class="header-nav-display" href="products.html">Constellations</a>
+            <a class="header-nav-display" href="products.html">Galaxies</a>
+            <a class="header-nav-display" href="products.html">Bundles</a>
+        </nav>
+      </div>
+      </section>
+
+
+      <section class="element">
+        <h2>Product/Service Listing</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank"&gt;&lt;img src="img/andromedas_cluster.png"
+            alt="A Yellow Book"
+            width="350"
+            height="350"/&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element</h4>
+      
+        <div class="service-listing">
+          <div>
+            <figure>
+              <a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank"
+              ><img class="img-element"
+                src="img/andromedas_cluster.png"
+                alt="Andromeda's cluster"
+                width="300"
+                height="300"
+            /></a>
+          </div>
+            <div class="service-listing-info">
+              <h2 class="service-display-h2">01. Andromeda's Cluster</h2>
+              <h1 class="service-price">$530.00</h1>
+              <p class="service-info">Mayall II  (NGC 224-G1) is a globular cluster orbiting the Andromeda Galaxy. The  cluster is located about 130,000 light years from M31’s core and is the  brightest globular cluster in the Local Group of galaxies. It has an  apparent magnitude of 13.7.</p>
+              <a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+
+      <section class="element">
+        <h2>Payment Form</h2>
+
+        <h4>CSS selector</h4>
+        <p>N/A</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="text" placeholder="Ex. Bob Simpson"&gt;</code>
+
+        <h4>Rendered element</h4>
+
+            <div class="order-form">
+              <div>
+                <h1 class="page-header">Checkout</h1>
+
+                <div class="radio-button">
+                  <input class="radio-input" type="radio" id="card" name="payment_methods" value="Card">
+                  <label class="radio-label" for="card">Card</label> 
+
+                  <input class="radio-input" type="radio" id="apple-pay" name="payment_methods" value="Apple Pay">
+                  <label class="radio-label" for="apple-pay">Apple Pay</label>
+                </div>          
+
+                <div class="input-field">
+                  <label class="checkout-label"> 
+                    Name on Card 
+                    <input class="input-display" type="text" placeholder="Ex. Bob Simpson">
+                  </label>
+                  <label class="checkout-label">
+                    Postal Code 
+                    <input class="input-display" type="text" placeholder="ABC 123">
+                </label>
+                </div>
+              </div>
+                <div>
+                  <input class="submit-botton" type="submit" value="Order">
+                </div>
+            </div>
+
+      </section>
+
+
+      <section class="element checkout-basket">
+        <h2>Checkout Cart</h2>
+
+        <h4>CSS selector</h4>
+        <p>.checkout-display</p>
+
+        <h4>Sample code 01:</h4>
+        <code>&lt;a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank"&gt;&lt;img src="img/andromedas_cluster.png"
+            alt="Andromeda's cluster"
+            width="150"
+            height="150"/&gt;&lt;/a&gt;</code>
+
+
+        <h4>Sample code 02:</h4>
+        <code>&lt;a href="https://en.wikipedia.org/wiki/NGC_7662" target="_blank"&gt;&lt;img src="img/book2.jpg"
+            alt="Blue snowball nebula"
+            width="150"
+            height="150"/&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element</h4>
+
+        <div class="order-form">
+          <h1 class="page-header">Basket</h1>
+          <h2 class="header-subtext">Confirm Your Order</h2>
+          
+          <div class="checkout-display">
+            <figure>
+              <a href="https://en.wikipedia.org/wiki/Mayall_II" target="_blank"
+              ><img class="img-element"
+                src="img/andromedas_cluster.png"
+                alt="Andromeda's cluster"
+                width="150"
+                height="150"
+            /></a>
+            </figure>
+
+            <div class="checkout-item-text">
+              <h2 class="checkout-item-name"> Andromeda's Cluster</h2>
+              <p class="checkout-item-name"> Hundreds of globular clusters</p>
+              <h4 class="checkout-price">$530.00</h4>
+            </div>
+          </div>
+
+          <div class="checkout-display">
+            <figure>
+              <a href="https://en.wikipedia.org/wiki/NGC_7662" target="_blank"
+              ><img class="img-element"
+                src="img/blue_snowball.png"
+                alt="Blue snowball nebula"
+                width="150"
+                height="150"
+            /></a>
+            </figure>
+            <div class="checkout-item-text">
+              <h2 class="checkout-item-name"> Blue Snowball</h2>
+              <p class="checkout-item-name">Planetary nebula in the north</p>
+              <h4 class="checkout-price">$1700.00</h4>
+            </div>
+          </div>
+
+          <h1 class="checkout-total checkout-total-display">Total: $2230.00</h1>
+        </div>
+
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- BRANDING SECTION // -->
+    <section id="branding_elements" class="body-align">
+      <h1>Branding Elements</h1>
+
+      <section class="element">
+        <h2>About the Company</h2>
+        <p class="text-display-p">
+          Nova's Archive is a platform in which extraterrestrial collectors can browse, shop, and purchase stars, constellations, and other astronomical objects. The product offering is full of spectacular items that any collector would be thrilled to add to their collection. It draws in both avid collectors and first time buyers, united by their love of outer space. Nova's Archive also offers specs and details about all products to ensure customers are well informed before adding to their collections. 
+        </p>
+
+        <h2>Company Updates / Events</h2>
+        <p class="text-display-p">
+          Aside from its product offerings, Nova's Archive hosts a variety of events including stargazing nights, astronomy workshops, and auctions. It is a hub for the astronomy community and acts as a platform for like-minded individuals to enjoy their love of astronomy together. Its head office and complete with an observatory and clubhouse can be found on 339 N Satellite Way. 
+        </p>
+
+
+        <h2>Company Contact</h2>
+        <p class="text-display-p">
+        <nav>        
+            <a href="index.html">FAQs</a>   
+            <a href="index.html">Contact Us</a>
+            <a href="index.html">Returns</a>
+            <a href="index.html">Terms & Conditions</a>
+        </nav>
+        </p>
+
+
+      </section>
+
+      <section class="element">
+        <h2>Brand Components</h2>
+        <figure>
+          <img
+            src="img/Moodboard.png"
+            alt="Moodboard"
+            width="770"
+            height="800"
+          />
+        </figure>
+      </section>
+
+      <h1>Extra Exploration</h1>
+
+      <section class="element">
+
+        <footer class="footer-layout">
+          <h1>Leave your thoughts</h1>
+
+            <div class="footer-container">
+
+              <div class="input-field">
+                <label>                     
+                  <input class="input-display" type="text" placeholder="Add comments">
+                </label>
+              </div>
+
+              <div>
+                <input class="submit-botton" type="submit" value="Submit">
+              </div>
+
+            </div>
+        </footer>
+      </section>
+
+    </section>
+
+
+    <section id="citations" class="body-align">
+      <h1>Citations</h1>
+
+      <ol>
+        <li>Constellation Guide (n.d.). Andromeda Constellation. Constellation Guide. Retrieved from <a href="https://www.constellation-guide.com/constellation-list/andromeda-constellation/">https://www.constellation-guide.com/constellation-list/andromeda-constellation/</a
+          >
+        </li>
+        <li>[ Franco ]. (n.d.). Stars [Pinterest Post]. Retrieved from <a href="https://ca.pinterest.com/pin/69946600455656704/">https://ca.pinterest.com/pin/69946600455656704/</a
+          >
+        </li>
+        <li>Pinterest (n.d.). Planet Diagram [Pinterest Post]. Retrieved from <a href="https://ca.pinterest.com/pin/2322237302792368/">https://ca.pinterest.com/pin/2322237302792368/</a
+          >
+        </li>
+        <li>Wynn, H. (n.d.). Star. [Pinterest Post]. Retrieved from <a href="https://ca.pinterest.com/pin/389913280250319109/">https://ca.pinterest.com/pin/389913280250319109/</a
+          >
+        </li>
+      </ol>
+
+    </section>
+
+  </body>
+</html>
